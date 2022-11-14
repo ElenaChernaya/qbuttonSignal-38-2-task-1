@@ -49,7 +49,7 @@ ImageButton::ImageButton(QWidget* parent)
     setGeometry(currentImage.rect());
     connect(this, &QPushButton::clicked, this, &ImageButton::setDown);
 
-    //Для звукового сигнала
+    //For signal
     signal = new QMediaPlayer(this);
     connect(this, &QPushButton::clicked, this, &ImageButton::playSignal);
 
